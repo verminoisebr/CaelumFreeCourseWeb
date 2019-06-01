@@ -1,3 +1,5 @@
+
+/* header com logo e links */
 .sacola {
     background-image: url(../img/sacola.png);
     background-repeat: no-repeat;
@@ -40,8 +42,163 @@ header {
     position: relative;
 }
 
+/* menu e busca*/
 .menu-opcoes {
     position: absolute;
     bottom: 0;
     right: 0;
 }
+
+.busca,
+.menu-departamentos {
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 230px;  
+    
+    float: left;
+}
+
+.menu-departamentos {
+    clear: left;
+
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+    margin: 10px;
+}
+
+.menu-departamentos li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;    
+}
+
+.menu-departamentos a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.destaque {
+    margin-top: 10px;
+}
+
+.busca input[type=search] {
+    width: 170px;
+}
+
+/*config paineis*/
+.painel {
+    margin: 10px 0;
+    padding: 10px;
+    width: 445px;
+}
+
+.novidades {
+    float: left;
+}
+
+.mais-vendidos {
+    float: right;
+}
+
+.painel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
+}
+
+.painel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.painel a {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.novidades {
+    background-color: #f5dcdc;
+}
+
+.mais-vendidos {
+    background-color: #dcdcf5;
+}
+
+/* criando rodapé */
+footer {
+    clear: both;
+    background-image: url(../img/fundo-rodape.png);
+
+    padding: 20px 0;
+}
+
+.social a {
+    /* tamanho da imagem */
+    height: 32px;
+    width: 32px;
+
+    /* image replacement */
+    display: block;
+    text-indent: -9999px;
+}
+
+.social a[href*="facebook"] {
+    background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter"] {
+    background-image: url(../img/twitter.png);
+}
+
+.social a[href*="google"] {
+    background-image: url(../img/googleplus.png);
+}
+
+footer .container {
+    position: relative;    
+}
+
+.social {
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.social li {
+    float: left;
+    margin-left: 25px;
+    margin-top: -16px; /* metade do tamanho da imagem centralizando verticalmente a mesma */
+}
+
+.busca button {
+    /* adicionando imagem */
+    background-image: url(../img/busca.png);
+    background-repeat: no-repeat;
+    border: none;
+    
+    /* tamanho da imagem */
+    width: 20px;
+    height: 20px;
+
+    /* image replacement */
+    text-indent: -9999px;
+}
+ footer {
+     /* a classe container parece que nao foi aplicada... */
+     width: 940px;
+     margin: 0 auto;
+     text-indent: 25px;
+ }
