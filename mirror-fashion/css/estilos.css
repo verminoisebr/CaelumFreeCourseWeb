@@ -202,3 +202,76 @@ footer .container {
      margin: 0 auto;
      text-indent: 25px;
  }
+
+ /* seletores, pseudo classes, pseudo elementos */
+
+ .menu-opcoes a:hover {
+     color: #007dc6;
+ }
+
+ .menu-opcoes a:active {
+     color: #867dc6;
+ }
+ 
+ .menu-departamentos li ul {
+     display: none;
+ }
+
+ .menu-departamentos li:hover ul {
+     display: block;
+ }
+
+ .menu-departamentos ul ul li {
+     background-color: #dcdcdc;
+ }
+
+ .menu-departamentos li li a::before {
+     /* content: '- '; */
+     content: '\272A';
+     padding-right: 5px;
+ }
+
+ .painel h2::before {
+     content: '\2756';
+     padding-right: 5px;
+     opacity: 0.4;
+ }
+
+ /* sombras, bordas arredondadas, gradiente */
+ .painel {
+     border-radius: 4px;
+     box-shadow: 1px 1px 4px #999;
+ }
+
+ .painel h2 {
+     text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
+ }
+
+ .busca {
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+ }
+
+ .novidades {
+     background: linear-gradient(#f5dcdc, #bebef4);
+ }
+
+ .mais-vendidos {
+     background: linear-gradient(#dcdcf5, #f4bebe);
+ }
+
+ /* transform e transition */
+ .painel li:hover {
+     background-color: rgba(255, 255, 255, 0.8);
+     box-shadow: 0 0 5px #333;
+     transform: scale(1.2) rotate(-5deg);
+     transition: 0.7s ease-in;
+ }
+
+ .painel li:nth-child(2n):hover {
+     transform: scale(1.2) rotate(5deg);
+ }
+
+ .painel li {
+     transition: 0.7s ease-out;
+ }
